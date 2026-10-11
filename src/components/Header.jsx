@@ -7,7 +7,9 @@ export default function Header({ t, lang, setLang }) {
         <QrCode className="w-7 h-7 text-brand" />
         <div>
           <h1 className="text-lg font-bold leading-tight">
-            <span className="text-brand">DoAide</span> QRMenu
+            <span className="text-brand">DoAide</span>
+            <span className="text-gray-400 mx-1">|</span>
+            <span className="text-white">QRMenu</span>
           </h1>
         </div>
       </div>

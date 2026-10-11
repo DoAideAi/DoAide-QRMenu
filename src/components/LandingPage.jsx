@@ -1,7 +1,7 @@
 import { QrCode, Palette, Zap, Share2 } from 'lucide-react';
 
 const features = [
-  { icon: Zap, titleKey: 'feature1Title', descKey: 'feature1Desc', color: 'bg-amber-100 text-amber-600' },
+  { icon: Zap, titleKey: 'feature1Title', descKey: 'feature1Desc', color: 'bg-teal-100 text-teal-600' },
   { icon: Palette, titleKey: 'feature2Title', descKey: 'feature2Desc', color: 'bg-purple-100 text-purple-600' },
   { icon: QrCode, titleKey: 'feature3Title', descKey: 'feature3Desc', color: 'bg-blue-100 text-blue-600' },
   { icon: Share2, titleKey: 'feature4Title', descKey: 'feature4Desc', color: 'bg-green-100 text-green-600' },
@@ -18,14 +18,16 @@ export default function LandingPage({ onGetStarted, t }) {
         </div>
 
         <h1 className="text-4xl sm:text-5xl font-bold mb-4 leading-tight">
-          <span className="text-brand">DoAide</span> QRMenu
+          <span className="text-brand">DoAide</span>
+          <span className="text-gray-400 mx-2">|</span>
+          <span className="text-white">QRMenu</span>
         </h1>
         <p className="text-xl sm:text-2xl text-gray-300 mb-2">{t.tagline}</p>
         <p className="text-gray-400 mb-8 max-w-xl mx-auto">{t.heroDescription}</p>
 
         <button
           onClick={onGetStarted}
-          className="inline-flex items-center gap-2 bg-brand text-dark font-bold px-8 py-4 rounded-xl text-lg hover:bg-brand-dark transition-all hover:scale-105 shadow-lg shadow-brand/25"
+          className="inline-flex items-center gap-2 bg-brand text-white font-bold px-8 py-4 rounded-xl text-lg hover:bg-brand-dark transition-all hover:scale-105 shadow-lg shadow-brand/25"
         >
           {t.getStarted}
         </button>
@@ -65,7 +67,7 @@ export default function LandingPage({ onGetStarted, t }) {
                       <div className="w-2.5 h-2.5 rounded-sm border border-green-500" />
                       <div className={`h-2 bg-gray-600 rounded ${i === 1 ? 'w-16' : i === 2 ? 'w-20' : 'w-14'}`} />
                     </div>
-                    <div className="h-4 w-8 bg-brand rounded text-[8px] flex items-center justify-center text-dark font-bold">₹249</div>
+                    <div className="h-4 w-8 bg-brand rounded text-[8px] flex items-center justify-center text-white font-bold">₹249</div>
                   </div>
                 ))}
               </div>
@@ -80,8 +82,11 @@ export default function LandingPage({ onGetStarted, t }) {
 
       {/* Footer */}
       <div className="text-center py-8 border-t border-white/10">
+        <div className="inline-flex items-center gap-2 bg-brand/10 border border-brand/20 rounded-full px-4 py-1.5 mb-3">
+          <span className="text-xs font-medium text-brand">A DoAide Product</span>
+        </div>
         <p className="text-gray-500 text-sm">
-          {t.poweredBy} | <a href="https://doaide.com" className="text-brand hover:text-brand-light" target="_blank" rel="noopener noreferrer">doaide.com</a>
+          <a href="https://doaide.com" className="text-brand hover:text-brand-light" target="_blank" rel="noopener noreferrer">doaide.com</a>
         </p>
       </div>
     </div>

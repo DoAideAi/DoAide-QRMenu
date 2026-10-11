@@ -100,7 +100,7 @@ export default function MenuBuilder({ menuData, setMenuData, t, lang }) {
         lang={lang}
       />
 
-      <div className="border border-gray-200 rounded-lg p-3 bg-amber-50/50">
+      <div className="border border-gray-200 rounded-lg p-3 bg-teal-50/50">
         <label className="flex items-center gap-2 cursor-pointer">
           <input
             type="checkbox"
@@ -116,7 +116,7 @@ export default function MenuBuilder({ menuData, setMenuData, t, lang }) {
             value={menuData.specialOffer}
             onChange={e => updateField('specialOffer', e.target.value)}
             placeholder={t.specialOfferPlaceholder}
-            className="w-full mt-2 px-3 py-2 border border-amber-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand/50 text-sm"
+            className="w-full mt-2 px-3 py-2 border border-teal-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand/50 text-sm"
           />
         )}
       </div>
@@ -207,7 +207,7 @@ function CategoryCard({ category, catIndex, totalCategories, onUpdateCategory, o
 
         <button
           onClick={() => onAddItem(category.id)}
-          className="w-full py-2 text-sm text-brand hover:text-brand-dark hover:bg-amber-50 rounded-lg border border-dashed border-brand/40 transition-colors flex items-center justify-center gap-1"
+          className="w-full py-2 text-sm text-brand hover:text-brand-dark hover:bg-teal-50 rounded-lg border border-dashed border-brand/40 transition-colors flex items-center justify-center gap-1"
         >
           <Plus className="w-3.5 h-3.5" />
           {t.addItem}

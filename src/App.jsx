@@ -61,7 +61,7 @@ export default function App() {
             onClick={() => setActiveTab(id)}
             className={`flex-1 flex items-center justify-center gap-1.5 py-3 text-sm font-medium transition-colors ${
               activeTab === id
-                ? 'text-brand border-b-2 border-brand bg-amber-50/50'
+                ? 'text-brand border-b-2 border-brand bg-teal-50/50'
                 : 'text-gray-500 hover:text-gray-700'
             }`}
           >
@@ -113,11 +113,15 @@ export default function App() {
       </div>
 
       {/* Footer */}
-      <footer className="bg-dark text-center py-3 text-xs text-gray-500 no-print">
-        {t.poweredBy} |{' '}
-        <a href="https://doaide.com" className="text-brand hover:text-brand-light" target="_blank" rel="noopener noreferrer">
-          doaide.com
-        </a>
+      <footer className="bg-dark text-center py-3 no-print">
+        <div className="inline-flex items-center gap-2 bg-brand/10 border border-brand/20 rounded-full px-3 py-1 mb-1">
+          <span className="text-[10px] font-medium text-brand">A DoAide Product</span>
+        </div>
+        <p className="text-xs text-gray-500">
+          <a href="https://doaide.com" className="text-brand hover:text-brand-light" target="_blank" rel="noopener noreferrer">
+            doaide.com
+          </a>
+        </p>
       </footer>
     </div>
   );

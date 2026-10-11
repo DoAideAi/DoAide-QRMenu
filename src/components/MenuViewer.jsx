@@ -136,8 +136,20 @@ export default function MenuViewer({ menuData }) {
         ))}
       </div>
 
-      <div style={{ textAlign: 'center', padding: '16px', opacity: 0.5, fontSize: '12px' }}>
-        Powered by <a href="https://doaide.com" style={{ color: theme.accent }} target="_blank" rel="noopener noreferrer">DoAide QRMenu</a>
+      <div style={{ textAlign: 'center', padding: '16px', fontSize: '12px' }}>
+        <span style={{
+          display: 'inline-block',
+          background: `${theme.accent}15`,
+          border: `1px solid ${theme.accent}30`,
+          borderRadius: '999px',
+          padding: '4px 12px',
+          fontSize: '10px',
+          fontWeight: 500,
+          color: theme.accent,
+          marginBottom: '4px',
+        }}>A DoAide Product</span>
+        <br />
+        <a href="https://doaide.com" style={{ color: theme.accent, opacity: 0.6 }} target="_blank" rel="noopener noreferrer">doaide.com</a>
       </div>
     </div>
   );

@@ -100,7 +100,7 @@ export default function ExportPanel({ menuData, t }) {
       <div className="grid grid-cols-1 gap-2">
         <button
           onClick={handleDownloadQR}
-          className="flex items-center justify-center gap-2 px-4 py-2.5 bg-brand text-dark font-semibold rounded-lg hover:bg-brand-dark transition-colors text-sm"
+          className="flex items-center justify-center gap-2 px-4 py-2.5 bg-brand text-white font-semibold rounded-lg hover:bg-brand-dark transition-colors text-sm"
         >
           <Download className="w-4 h-4" />
           {t.downloadQR}
