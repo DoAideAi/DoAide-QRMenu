@@ -1,0 +1,19 @@
+<svg width="1200" height="630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e"/>
+      <stop offset="100%" style="stop-color:#16213e"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <text x="600" y="240" text-anchor="middle" font-family="Georgia, serif" font-size="72" font-weight="700" fill="#0D9488">DoAide</text>
+  <text x="600" y="240" text-anchor="middle" font-family="Georgia, serif" font-size="72" font-weight="700" fill="#6b7280" dx="210">|</text>
+  <text x="600" y="240" text-anchor="middle" font-family="Georgia, serif" font-size="72" font-weight="700" fill="#ffffff" dx="310">QRMenu</text>
+  <text x="600" y="320" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="32" fill="#9ca3af">Free Digital Menu Maker for Restaurants</text>
+  <text x="600" y="380" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="22" fill="#6b7280">Create QR code menus instantly — No signup required</text>
+  <rect x="440" y="430" width="320" height="56" rx="12" fill="#0D9488"/>
+  <text x="600" y="466" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="22" font-weight="700" fill="#ffffff">Get Started — It's Free!</text>
+  <rect x="30" y="580" width="140" height="30" rx="15" fill="rgba(13,148,136,0.15)" stroke="rgba(13,148,136,0.3)" stroke-width="1"/>
+  <text x="100" y="600" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="500" fill="#0D9488">A DoAide Product</text>
+  <text x="1170" y="600" text-anchor="end" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#6b7280">qrmenu.doaide.com</text>
+</svg>
